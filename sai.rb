@@ -5,21 +5,21 @@
 class Sai < Formula
   desc "CLI tool for the SAI Platform - ArenaX Labs"
   homepage "https://competesai.com"
-  version "0.0.15"
+  version "0.0.16"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.15/sai_0.0.15_darwin_amd64.tar.gz"
-      sha256 "82c7ff856ef99758c1e7e74cc36a2d70f908b9395fb8f91f94737ee43dce6921"
+      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.16/sai_0.0.16_darwin_amd64.tar.gz"
+      sha256 "a421402b176dce9451ac22c81009af29b7ae30c6fa81957b0374d0894c5a9847"
 
       def install
         bin.install "sai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.15/sai_0.0.15_darwin_arm64.tar.gz"
-      sha256 "7aa6b2bce4b5f00f19d926727121b2010b68462702add13165ebc832960255a8"
+      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.16/sai_0.0.16_darwin_arm64.tar.gz"
+      sha256 "9742fbba56a40aad845733e306034b9ca2afbe74308bbfc3be9b4da92ffd05e9"
 
       def install
         bin.install "sai"
@@ -30,8 +30,8 @@ class Sai < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://storage.googleapis.com/axl-binaries/sai/v0.0.15/sai_0.0.15_linux_amd64.tar.gz"
-        sha256 "6f8273be396dd3ef6a93661372982c10bbe9930fa985d006b04d198db82f1710"
+        url "https://storage.googleapis.com/axl-binaries/sai/v0.0.16/sai_0.0.16_linux_amd64.tar.gz"
+        sha256 "6d844d46bb8358e3684306efb2f66825bdd40e52828cb37e46a93ffc148d9a02"
 
         def install
           bin.install "sai"
@@ -40,8 +40,8 @@ class Sai < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://storage.googleapis.com/axl-binaries/sai/v0.0.15/sai_0.0.15_linux_arm64.tar.gz"
-        sha256 "dc46504baf3d520dce07af6aa0e8e07c31cc7b58b4ecd28c9c3b47125519ca88"
+        url "https://storage.googleapis.com/axl-binaries/sai/v0.0.16/sai_0.0.16_linux_arm64.tar.gz"
+        sha256 "8eae0c332c8bbe51ca433c5df098c513e38f5fe5a24b696a210770f264e6e387"
 
         def install
           bin.install "sai"
