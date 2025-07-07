@@ -5,21 +5,21 @@
 class Sai < Formula
   desc "CLI tool for the SAI Platform - ArenaX Labs"
   homepage "https://competesai.com"
-  version "0.0.23"
+  version "0.0.24"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.23/sai_0.0.23_darwin_amd64.tar.gz"
-      sha256 "772af0b30eda8b4a5cef6c643b4dc449f02471701922c9091103b14c024ed96d"
+      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.24/sai_0.0.24_darwin_amd64.tar.gz"
+      sha256 "241aa8cc968c6b7725584e57d8ef94761a74a8601a5405a1e82e66a1e4f618a7"
 
       def install
         bin.install "sai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.23/sai_0.0.23_darwin_arm64.tar.gz"
-      sha256 "e00c47e97b3a2cfc3383a2b6283ef2204236adab8da1d1a8e8505c677300f31d"
+      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.24/sai_0.0.24_darwin_arm64.tar.gz"
+      sha256 "fe7de2ca0bc7fd7d1b3e94e80f92afc8b7f29f7a7368e153d5f1685fe51a8f08"
 
       def install
         bin.install "sai"
@@ -29,15 +29,15 @@ class Sai < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.23/sai_0.0.23_linux_amd64.tar.gz"
-      sha256 "a2b4d0fa04a81c84756a99400404b9c5a7600ee5c2e94aefff8d1f05c8adef63"
+      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.24/sai_0.0.24_linux_amd64.tar.gz"
+      sha256 "62acc81471b82d951213b3651b3670f779ec5ba28cc0fb54c4c05a43852ac6f5"
       def install
         bin.install "sai"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.23/sai_0.0.23_linux_arm64.tar.gz"
-      sha256 "b64fc6b9e1bea94b868fef3a9c4fad5f29d2acc6202d3afe8cd8a4e8f3ebd578"
+      url "https://storage.googleapis.com/axl-binaries/sai/v0.0.24/sai_0.0.24_linux_arm64.tar.gz"
+      sha256 "41b44b42395f01820cba448c8f3bb94c9a21befb3e12e87aeb377bdf90f57169"
       def install
         bin.install "sai"
       end
